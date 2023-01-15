@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap');
 
+/* General CSS */
 * {
   margin: 0;
   padding: 0;
@@ -31,4 +32,136 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #333;
+}
+
+/* Header CSS */
+.header-area {
+  padding: 15px 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.header-info a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.header-info a:hover {
+  color: #f15d30;
+}
+
+.header-social a {
+  color: #fff;
+  font-size: 16px;
+  margin-left: 10px;
+  transition: .3s;
+}
+
+.header-social a:hover {
+  color: #f15d30;
+}
+
+.header-area {
+  padding: 30px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  top: 0;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  margin: 0 10px;
+}
+
+.header ul li a {
+  color: #fff;
+  transition: .3s;
+}
+
+.header ul li a:hover {
+  color: #f15d30;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid transparent;
+  background-color: #f15d30;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: #f15d30;
+  color: #fff;
+}
+
+/* Banner CSS */
+.banner-area {
+  padding: 260px 0 140px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+}
+
+.banner-area:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  opacity: .7;
+
+}
+
+.banner {
+  text-align: center;
+  color: #fff;
+}
+
+.banner h4 {
+  text-transform: capitalize;
+  font-size: 26px;
+}
+
+.banner h2 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 90px;
+  margin: 20px 0;
+  text-transform: uppercase;
+
 }
