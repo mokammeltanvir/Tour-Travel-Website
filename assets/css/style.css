@@ -351,3 +351,46 @@ color: #fff;
 transition: 0.3s;
 transform: scale(1.1);
 }
+
+/* Team or Tour Guide CSS */
+.team-area{
+  background-color: #333;
+  padding: 100px 0;
+}
+.team-area .section-title{
+  color: #fff;
+}
+.teams{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.single-team{
+  flex-basis: 24%;
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+.single-team img{
+  width: 100%;
+}
+.single-team img:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+.single-team h4{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.single-team h4 span{
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+}
+.single-team h4:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
