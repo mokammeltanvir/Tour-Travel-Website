@@ -393,4 +393,63 @@ transform: scale(1.1);
   transform: scale(1.1);
   transition: 0.2s;
 }
-
+/* BLOG CSS */
+.blogs-area{
+  padding: 100px 0;
+}
+.blogs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.single-blog{
+  flex-basis: 32%;
+  background: #fff;
+  padding: 15px;
+}
+.single-blog img{
+  width: 100%;
+}
+.single-blog img:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+.blog-img{
+position: relative;
+}
+.blog-img span{
+  position: absolute;
+  left: 10px;top: 10px;
+  background-color: #f15d30;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  font-weight: 600;
+}
+.blog-meta{
+  text-align: center;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.blog-meta a{
+  color: #333;
+  margin: 0 10px;
+}
+.single-blog h4{
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+}
+.single-blog p{
+  margin: 10px 0;
+}
+.single-blog a {
+  text-transform: capitalize;
+  color: #f15d30;
+}
+.single-blog a:hover {
+  font-size: large;
+  transition: 0.3s;
+}
