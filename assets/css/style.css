@@ -453,3 +453,184 @@ position: relative;
   font-size: large;
   transition: 0.3s;
 }
+
+/* Footer CSS */
+.footer-area{
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  padding: 60px 0;
+  position: relative;
+  z-index: 2;
+}
+.footer-area:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;top: 0;
+  opacity: .95;
+  z-index: -1;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.single-footer:nth-child(1) {
+  flex-basis: 30%;
+}
+
+.single-footer:nth-child(4) {
+  flex-basis: 30%;
+}
+
+.single-footer h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.single-footer p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social a {
+  color: #fff;
+  border: 1px solid #ddd;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.single-footer h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.single-footer h4:after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #f15d30;
+  bottom: 0;
+  left: 0;
+}
+
+.single-footer li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.single-footer li a {
+  color: #fff;
+  transition: .3s;
+}
+
+.single-footer li a:hover {
+  color: #f15d30;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.copy {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width:767px) {
+  .container {
+    width: 350px;
+  }
+
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-social {
+    margin-top: 10px;
+  }
+
+  .header ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .header ul.open {
+    display: block;
+    position: absolute;
+    background-color: #333;
+    left: 0;
+    top: 160px;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .header ul.open a {
+    color: #fff;
+    padding: 5px;
+    display: block;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .header a.btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .banner h2 {
+    font-size: 25px;
+    line-height: 40px;
+    margin: 15px 0;
+  }
+
+  .about-content,
+  .single-team,
+  .single-blog {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about-img,
+  .single-destination,
+  .single-package {
+    flex-basis: 100%;
+  }
+
+  .single-footer {
+    flex-basis: 100% !important;
+    margin-bottom: 30px;
+  }
+}
