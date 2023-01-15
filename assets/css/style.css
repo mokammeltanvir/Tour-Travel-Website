@@ -303,3 +303,51 @@ body {
 .destination-area .section-title{
   color: #fff;
 }
+
+/* Packages CSS */
+.packages-area{
+  padding: 100px 0;
+}
+.packages{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.single-package{
+  flex-basis: 32%;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+}
+.single-package img{
+  width: 100%;
+}
+.single-package h4 {
+  text-align: center;
+  font-size: 22px;
+  margin: 15px 0;
+}
+.package-meta{
+  border-bottom: 1px dashed #ddd;
+  border-top: 1px dashed #ddd;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+.package-meta span i{
+  margin-right: 3px;
+}
+.single-package a{
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: #f15d30;
+}
+.single-package a:hover {
+background-color: #f15d30;
+color: #fff;
+transition: 0.3s;
+transform: scale(1.1);
+}
