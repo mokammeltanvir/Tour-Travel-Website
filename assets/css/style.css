@@ -165,3 +165,53 @@ body {
   text-transform: uppercase;
 
 }
+/* About CSS */
+.about-area{
+  padding: 100px 0;
+}
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.about-content{
+  flex-basis: 55%;
+}
+.about-content a:hover{
+  color: #333;
+}
+.about-image{
+  flex-basis: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-content span{
+  display: block;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.about-content h4{
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: capitalize;
+  margin: 20px 0;
+
+}
+.about-content p{
+  margin-bottom: 20px;
+}
+.single-img{
+  flex-basis: 48%;
+  margin: 10px 0;
+}
+.single-img img{
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+.single-img img:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
